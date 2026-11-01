@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guideregion - Tourist Web Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo">Guideregion</a>
+      <div class="search-box">
+        <input type="text" placeholder="Search location..." aria-label="Search location">
+      </div>
+      <nav class="nav-menu">
+        <a href="#places" class="nav-link">Top Places</a>
+        <a href="#routes" class="nav-link">Routes</a>
+        <a href="#tips" class="nav-link">Tips for Tourists</a>
+      </nav>
+      <button class="burger-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover the Amazing Places of Your Region</h1>
+        <button class="cta-button">Select Tour</button>
+      </div>
+    </section>
+
+    <section id="places" class="grid-section">
+      <h2>Popular Destinations</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-image-placeholder"></div>
+          <div class="card-body">
+            <h3>Mountain View</h3>
+            <p class="tag">Category: Hiking</p>
+            <p class="rating">Rating: ★ 4.9</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image-placeholder"></div>
+          <div class="card-body">
+            <h3>Lake Resort</h3>
+            <p class="tag">Category: 4x4 Offroad</p>
+            <p class="rating">Rating: ★ 4.8</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <h2>Route Configurator</h2>
+      <form class="config-form">
+        <div class="form-group">
+          <label for="duration">Duration (in days):</label>
+          <input type="number" id="duration" min="1" max="30" required>
+        </div>
+
+        <div class="form-group">
+          <label for="group-size">Group Size:</label>
+          <input type="number" id="group-size" min="1" max="50" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email for PDF Map:</label>
+          <input type="email" id="email" placeholder="example@mail.com" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Map in PDF</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="rescue-contacts">
+        <p>Rescue Service: <strong>112</strong></p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Certified Guides</a>
+      </div>
+      <div class="theme-switcher">
+        <button id="theme-toggle" class="theme-btn">Switch Dark/Light Mode</button>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
